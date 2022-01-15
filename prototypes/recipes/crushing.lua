@@ -21,6 +21,25 @@ return {
   },
   {
     type = "recipe",
+    name = "stone-furnace-to-sand",
+    localised_name = { "recipe-name.stone-furnace-to-sand" },
+    category = "crushing",
+    hide_from_player_crafting = true,
+    always_show_made_in = true,
+    allow_as_intermediate = false,
+    allow_intermediates = false,
+    always_show_products = true,
+    energy_required = 1,
+    enabled = true,
+    ingredients = {
+      { "stone-furnace", 1 },
+    },
+    results = {
+      { type = "item", name = "sand", amount_min = 11, amount_max = 13 },
+    },
+  },
+  {
+    type = "recipe",
     name = "imersite-powder",
     category = "crushing",
     icon = kr_items_with_variations_icons_path .. "imersite-powder/imersite-powder.png",
